@@ -1,0 +1,172 @@
+.section-capabilities {
+  background: var(--paper);
+  padding: clamp(72px, 10vw, 140px) 0;
+}
+
+/* Shared section header */
+.section-header {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 5vw, 56px);
+}
+
+.section-tag-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.section-tag-dot {
+  width: 10px;
+  height: 10px;
+  background: var(--red);
+  display: block;
+}
+
+.section-tag-dot.yellow {
+  background: var(--yellow);
+}
+
+.section-tag-dot.blue {
+  background: var(--blue);
+}
+
+.section-tag-text {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+.section-tag-text.yellow {
+  color: var(--yellow);
+}
+
+.section-tag-text.blue {
+  color: var(--blue);
+}
+
+.section-title {
+  margin: 0 0 clamp(40px, 5vw, 64px);
+  font-family: 'Archivo Expanded', sans-serif;
+  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+.section-title.max-ch {
+  max-width: 18ch;
+}
+
+/* Grid layout with borders */
+.grid-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 5vw, 56px);
+}
+
+.grid-wrapper {
+  border: 1px solid var(--ink);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1px;
+  background: var(--ink);
+}
+
+.capability-card {
+  background: var(--paper);
+  padding: clamp(28px, 3vw, 44px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: transform 0.2s ease;
+}
+
+.capability-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.capability-num {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Icons / Shapes inside capability cards */
+.capability-shape {
+  display: block;
+}
+
+.icon-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--red);
+}
+
+.icon-square {
+  width: 34px;
+  height: 34px;
+  background: var(--yellow);
+}
+
+.icon-triangle {
+  width: 0;
+  height: 0;
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-bottom: 30px solid var(--blue);
+}
+
+.icon-ring {
+  width: 34px;
+  height: 34px;
+  border: 5px solid var(--ink);
+  border-radius: 50%;
+}
+
+.icon-square-double {
+  position: relative;
+  width: 34px;
+  height: 34px;
+}
+
+.icon-square-double-main {
+  position: absolute;
+  inset: 0;
+  background: var(--red);
+}
+
+.icon-square-double-sub {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 17px;
+  height: 17px;
+  background: var(--yellow);
+}
+
+.icon-quarter-circle {
+  width: 34px;
+  height: 34px;
+  background: var(--blue);
+  border-radius: 50% 50% 50% 0;
+}
+
+.capability-title {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.capability-desc {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 1rem;
+}

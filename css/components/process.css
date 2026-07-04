@@ -1,0 +1,64 @@
+.section-process {
+  background: var(--ink);
+  color: var(--paper);
+  padding: clamp(72px, 10vw, 140px) 0;
+  overflow: hidden;
+}
+
+.process-line-wrap {
+  position: relative;
+  height: 2px;
+  background: rgba(240, 236, 225, 0.18);
+  margin-bottom: clamp(36px, 5vw, 56px);
+}
+
+.process-line-dot {
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  background: var(--red);
+  transform: translate(-50%, -50%);
+  animation: kt-travel 5s cubic-bezier(.65, 0, .35, 1) infinite alternate;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: clamp(24px, 3vw, 40px);
+}
+
+.process-step {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.process-step-num {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--red);
+}
+
+.process-step-num.yellow {
+  color: var(--yellow);
+}
+
+.process-step-num.blue {
+  color: var(--blue);
+}
+
+.process-step-title {
+  margin: 0;
+  font-family: 'Archivo Expanded', sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.process-step-desc {
+  margin: 0;
+  color: rgba(240, 236, 225, 0.62);
+  line-height: 1.5;
+  font-size: 0.96rem;
+}
