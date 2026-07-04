@@ -20,7 +20,7 @@ export function initParallax(shapesSelector) {
       
       const xTranslate = (-cx * depth).toFixed(1);
       const yTranslate = (-cy * depth).toFixed(1);
-      const rotation = (baseRotation + cx * depth * 0.12).toFixed(2);
+      const rotation = (baseRotation + cx * depth * 0.1).toFixed(2);
       
       el.style.transform = `translate3d(${xTranslate}px, ${yTranslate}px, 0) rotate(${rotation}deg)`;
     });

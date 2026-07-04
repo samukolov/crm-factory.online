@@ -1,23 +1,25 @@
 .section-process {
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--tint);
+  color: var(--ink);
   padding: clamp(72px, 10vw, 140px) 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
   overflow: hidden;
 }
 
 .process-line-wrap {
   position: relative;
   height: 2px;
-  background: rgba(240, 236, 225, 0.18);
+  background: rgba(52, 48, 42, 0.16);
   margin-bottom: clamp(36px, 5vw, 56px);
 }
 
 .process-line-dot {
   position: absolute;
   top: 50%;
-  width: 16px;
-  height: 16px;
-  background: var(--red);
+  width: 14px;
+  height: 14px;
+  background: var(--clay);
   transform: translate(-50%, -50%);
   animation: kt-travel 5s cubic-bezier(.65, 0, .35, 1) infinite alternate;
 }
@@ -38,15 +40,18 @@
   font-family: var(--font-mono);
   font-weight: 700;
   font-size: 13px;
-  color: var(--red);
 }
 
-.process-step-num.yellow {
-  color: var(--yellow);
+.process-step-num.clay {
+  color: var(--clay);
 }
 
-.process-step-num.blue {
-  color: var(--blue);
+.process-step-num.sage {
+  color: var(--sage);
+}
+
+.process-step-num.taupe {
+  color: var(--taupe);
 }
 
 .process-step-title {
@@ -58,7 +63,7 @@
 
 .process-step-desc {
   margin: 0;
-  color: rgba(240, 236, 225, 0.62);
+  color: var(--muted);
   line-height: 1.5;
   font-size: 0.96rem;
 }

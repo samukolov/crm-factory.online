@@ -4,7 +4,7 @@
 }
 
 .stack-list {
-  border-top: 1px solid var(--ink);
+  border-top: 1px solid var(--line);
 }
 
 .stack-row {
@@ -12,7 +12,7 @@
   grid-template-columns: minmax(140px, 220px) 1fr;
   gap: clamp(16px, 4vw, 48px);
   padding: clamp(22px, 3vw, 34px) 0;
-  border-bottom: 1px solid rgba(18, 18, 18, 0.16);
+  border-bottom: 1px solid var(--line);
   align-items: start;
 }
 
@@ -21,7 +21,7 @@
   font-size: 13px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--red);
+  color: var(--clay);
   padding-top: 6px;
 }
 
@@ -34,9 +34,9 @@
 .stack-tag {
   font-family: var(--font-mono);
   font-size: 13.5px;
-  border: 1px solid rgba(18, 18, 18, 0.35);
+  border: 1px solid var(--line);
   padding: 7px 13px;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .stack-tag:hover {

@@ -18,18 +18,14 @@
 }
 
 .section-tag-dot {
-  width: 10px;
-  height: 10px;
-  background: var(--red);
+  width: 9px;
+  height: 9px;
+  background: var(--clay);
   display: block;
 }
 
-.section-tag-dot.yellow {
-  background: var(--yellow);
-}
-
-.section-tag-dot.blue {
-  background: var(--blue);
+.section-tag-dot.sage {
+  background: var(--sage);
 }
 
 .section-tag-text {
@@ -37,15 +33,11 @@
   font-size: 13px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--red);
+  color: var(--clay);
 }
 
-.section-tag-text.yellow {
-  color: var(--yellow);
-}
-
-.section-tag-text.blue {
-  color: var(--blue);
+.section-tag-text.sage {
+  color: var(--sage);
 }
 
 .section-title {
@@ -69,11 +61,11 @@
 }
 
 .grid-wrapper {
-  border: 1px solid var(--ink);
+  border: 1px solid var(--line);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1px;
-  background: var(--ink);
+  background: var(--line);
 }
 
 .capability-card {
@@ -102,59 +94,59 @@
   display: block;
 }
 
-.icon-circle {
-  width: 34px;
-  height: 34px;
+.icon-circle-clay {
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  background: var(--red);
+  background: var(--clay);
 }
 
-.icon-square {
-  width: 34px;
-  height: 34px;
-  background: var(--yellow);
+.icon-square-taupe {
+  width: 32px;
+  height: 32px;
+  background: var(--taupe);
 }
 
-.icon-triangle {
+.icon-triangle-sage {
   width: 0;
   height: 0;
-  border-left: 17px solid transparent;
-  border-right: 17px solid transparent;
-  border-bottom: 30px solid var(--blue);
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-bottom: 28px solid var(--sage);
 }
 
-.icon-ring {
-  width: 34px;
-  height: 34px;
-  border: 5px solid var(--ink);
+.icon-ring-ink {
+  width: 32px;
+  height: 32px;
+  border: 4px solid var(--ink);
   border-radius: 50%;
 }
 
-.icon-square-double {
+.icon-square-double-new {
   position: relative;
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
 }
 
-.icon-square-double-main {
+.icon-square-double-new-main {
   position: absolute;
   inset: 0;
-  background: var(--red);
+  border: 2px solid var(--ink);
 }
 
-.icon-square-double-sub {
+.icon-square-double-new-sub {
   position: absolute;
   top: 0;
   right: 0;
-  width: 17px;
-  height: 17px;
-  background: var(--yellow);
+  width: 16px;
+  height: 16px;
+  background: var(--clay);
 }
 
-.icon-quarter-circle {
-  width: 34px;
-  height: 34px;
-  background: var(--blue);
+.icon-quarter-circle-sage {
+  width: 32px;
+  height: 32px;
+  background: var(--sage);
   border-radius: 50% 50% 50% 0;
 }
 

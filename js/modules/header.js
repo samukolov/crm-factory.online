@@ -9,13 +9,13 @@ export function initHeader(navSelector) {
   scrollHandler = () => {
     const isScrolled = window.scrollY > 24;
     
-    // Smooth transitions using classes or inline styles
+    // Smooth transitions using values from the new version palette
     if (isScrolled) {
-      nav.style.background = 'rgba(18, 18, 18, 0.94)';
-      nav.style.borderBottomColor = 'rgba(240, 236, 225, 0.14)';
+      nav.style.background = 'rgba(244, 241, 234, 0.94)';
+      nav.style.borderBottomColor = 'rgba(52, 48, 42, 0.16)';
     } else {
-      nav.style.background = 'rgba(18, 18, 18, 0.72)';
-      nav.style.borderBottomColor = 'rgba(240, 236, 225, 0.07)';
+      nav.style.background = 'rgba(244, 241, 234, 0.78)';
+      nav.style.borderBottomColor = 'rgba(52, 48, 42, 0.10)';
     }
   };
 

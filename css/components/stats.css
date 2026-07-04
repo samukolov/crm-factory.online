@@ -1,6 +1,8 @@
 .stats-section {
-  background: var(--red);
+  background: var(--tint);
   color: var(--ink);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
 .stats-container {
@@ -13,7 +15,7 @@
 
 .stats-card {
   padding: clamp(30px, 4vw, 52px) clamp(20px, 3vw, 40px);
-  border-right: 1px solid rgba(18, 18, 18, 0.16);
+  border-right: 1px solid var(--line);
 }
 
 .stats-card:last-child {
@@ -33,12 +35,13 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-top: 8px;
+  color: var(--muted);
 }
 
 @media (max-width: 600px) {
   .stats-card {
     border-right: none;
-    border-bottom: 1px solid rgba(18, 18, 18, 0.16);
+    border-bottom: 1px solid var(--line);
   }
   .stats-card:last-child {
     border-bottom: none;
